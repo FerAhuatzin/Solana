@@ -23,7 +23,8 @@ struct InitialView: View {
                     
 
                     Text("SOLANA")
-                        .padding()
+                        .padding(.top, 50.0)
+                        .padding(.bottom, 200.0)
                         .fontWeight(.bold)
                         .font(.custom("RobotoBold", size: 70))
                         .foregroundColor(.white)
@@ -39,22 +40,23 @@ struct InitialView: View {
                         
                         Text("Iniciar sesion")
                             .padding()
-                            .font(.custom("Roboto", size: 25))
+                            .font(.custom("Roboto", size: 20))
                             .foregroundColor(.black)
-                            .frame(width:200, height:70)
+                            .frame(width:150, height:70)
                             .background(.white.opacity(0.8))
                             .cornerRadius(15)
-                            .padding()
+                            //.padding()
                         
                     }
+                    
                     
                     NavigationLink(destination: RegistroView()) {
                         
                         Text("Registrarse")
                             .padding()
-                            .font(.custom("Roboto", size: 25))
+                            .font(.custom("Roboto", size: 20))
                             .foregroundColor(.black)
-                            .frame(width:200, height:70)
+                            .frame(width:150, height:70)
                             .background(.white.opacity(0.8))
                             .cornerRadius(15)
                             .padding()
