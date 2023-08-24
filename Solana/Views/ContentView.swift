@@ -15,37 +15,27 @@ struct InitialView: View {
         
         NavigationStack {
             
-            ZStack {
-                Color(hue: 0.639, saturation: 0.664, brightness: 0.8)
-                    .ignoresSafeArea()
                 
                 VStack {
                     
 
                     Text("SOLANA")
                         .padding(.top, 50.0)
-                        .padding(.bottom, 200.0)
+                        .padding(.bottom, 120.0)
                         .fontWeight(.bold)
                         .font(.custom("RobotoBold", size: 70))
-                        .foregroundColor(.white)
-                    
-                    Image("Solana")
-                        .resizable()
-                        .frame(width:200, height:200)
-                    
-                    
-                    Spacer()
+                        .foregroundColor(Color(red: 0.338, green: 0.44, blue: 0.962))
                     
                     NavigationLink(destination: InicioSesionView()) {
                         
                         Text("Iniciar sesion")
                             .padding()
-                            .font(.custom("Roboto", size: 20))
+                            .font(.custom("Roboto", size: 30))
                             .foregroundColor(.black)
-                            .frame(width:150, height:70)
-                            .background(.white.opacity(0.8))
-                            .cornerRadius(15)
-                            //.padding()
+                            .frame(width:250, height:70)
+                            .background(.black.opacity(0.1))
+                            .cornerRadius(10)
+                            .padding()
                         
                     }
                     
@@ -54,22 +44,25 @@ struct InitialView: View {
                         
                         Text("Registrarse")
                             .padding()
-                            .font(.custom("Roboto", size: 20))
+                            .font(.custom("Roboto", size: 30))
                             .foregroundColor(.black)
-                            .frame(width:150, height:70)
-                            .background(.white.opacity(0.8))
-                            .cornerRadius(15)
-                            .padding()
+                            .frame(width:250, height:70)
+                            .background(.black.opacity(0.1))
+                            .cornerRadius(10)
+                            .padding(.bottom, 60)
                         
                     }
                     
-                    Spacer()
+                    Image("Solana")
+                        .resizable()
+                        .frame(width:200, height:200)
+                    
                     
                                             
                 }
                 
                 
-            }
+            
             
         }
         
