@@ -99,7 +99,6 @@
 			isa = PBXGroup;
 			children = (
 				1A3EDD072A96CA2B0064D280 /* SolanaApp.swift */,
-				1A3EDD092A96CA2B0064D280 /* ContentView.swift */,
 				1A3EDD372A96CAF80064D280 /* Managers */,
 				1A3EDD362A96CAEC0064D280 /* Views */,
 				1A3EDD0B2A96CA2D0064D280 /* Assets.xcassets */,
@@ -138,6 +137,7 @@
 		1A3EDD362A96CAEC0064D280 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				1A3EDD092A96CA2B0064D280 /* ContentView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
