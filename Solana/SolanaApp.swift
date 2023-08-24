@@ -13,7 +13,7 @@ struct SolanaApp: App {
 
     var body: some Scene {
         WindowGroup {
-            InitialView()
+            InicioSesionView()
                 .environment(\.managedObjectContext, persistenceController.container.viewContext)
         }
     }
