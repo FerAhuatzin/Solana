@@ -20,11 +20,18 @@ struct InitialView: View {
                     .ignoresSafeArea()
                 
                 VStack {
+                    
+
                     Text("SOLANA")
                         .padding()
                         .fontWeight(.bold)
                         .font(.custom("RobotoBold", size: 70))
                         .foregroundColor(.white)
+                    
+                    Image("Solana")
+                        .resizable()
+                        .frame(width:200, height:200)
+                    
                     
                     Spacer()
                     
@@ -56,10 +63,7 @@ struct InitialView: View {
                     
                     Spacer()
                     
-                    Image("Solana")
-                        .resizable()
-                        .frame(width:300, height:300)
-                        .padding()
+                                            
                 }
                 
                 
