@@ -8,36 +8,44 @@
 import SwiftUI
 
 struct InicioSesionView: View {
+    @State var contraseña = ""
+    @State var correo = ""
+    @State var recuperarContraseña = ""
     var body: some View {
         NavigationStack{
+   
             Text("SOLANA")
-                .font(.largeTitle)
-                .fontWeight(.bold)
+                .font(.custom("Roboto",size: 70))
                 .foregroundColor(Color(red: 0.338, green: 0.44, blue: 0.962))
-                .padding()
+                
             
-            Text("Inicio de sesión")
-                .padding(50)
+            Text("Bienvenido a Solana")
+                .padding(30)
                 .font(.title)
                 .foregroundColor(Color.black)
             
-            Button("Correo electrónico"){
+            TextField("Correo electrónico", text:$correo )
                 
-            }
+            
             .padding()
-            .frame(width: 250.0, height: 50.0)
+            .frame(width: 250, height: 70.0)
             .foregroundColor(.black)
             .background(Color.black.opacity(0.05))
             .cornerRadius(10)
             
-            Button("Contraseña"){
-                
-            }
+            SecureField("Contraseña", text: $contraseña)
             .padding()
-            .frame(width: 250.0, height: 50.0)
+            .frame(width: 250, height: 70.0)
             .foregroundColor(.black)
             .background(Color.black.opacity(0.05))
             .cornerRadius(10)
+            
+            NavigationLink("Recuperar contraseña")
+            {
+                
+            }
+            .font(.custom("Roboto",size: 13))
+
             
             Button("Continuar"){
                 
