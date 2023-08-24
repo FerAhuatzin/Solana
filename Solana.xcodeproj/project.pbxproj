@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1A3E93A32A96D4E800EE228C /* InicioSesionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A3E93A22A96D4E800EE228C /* InicioSesionView.swift */; };
 		1A3EDD082A96CA2B0064D280 /* SolanaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A3EDD072A96CA2B0064D280 /* SolanaApp.swift */; };
 		1A3EDD0A2A96CA2B0064D280 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A3EDD092A96CA2B0064D280 /* ContentView.swift */; };
 		1A3EDD0C2A96CA2D0064D280 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A3EDD0B2A96CA2D0064D280 /* Assets.xcassets */; };
@@ -37,7 +36,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		1A3E93A22A96D4E800EE228C /* InicioSesionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = InicioSesionView.swift; path = Solana/InicioSesionView.swift; sourceTree = SOURCE_ROOT; };
 		1A3EDD042A96CA2B0064D280 /* Solana.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Solana.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A3EDD072A96CA2B0064D280 /* SolanaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SolanaApp.swift; sourceTree = "<group>"; };
 		1A3EDD092A96CA2B0064D280 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -140,7 +138,6 @@
 		1A3EDD362A96CAEC0064D280 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				1A3E93A22A96D4E800EE228C /* InicioSesionView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -286,7 +283,6 @@
 				1A3EDD142A96CA2D0064D280 /* Solana.xcdatamodeld in Sources */,
 				1A3EDD0A2A96CA2B0064D280 /* ContentView.swift in Sources */,
 				1A3EDD082A96CA2B0064D280 /* SolanaApp.swift in Sources */,
-				1A3E93A32A96D4E800EE228C /* InicioSesionView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
