@@ -16,54 +16,54 @@ struct InitialView: View {
         NavigationStack {
             
             ZStack {
-                Color(red: 0.338, green: 0.44, blue: 0.962)
+                Color(hue: 0.639, saturation: 0.664, brightness: 0.8)
                     .ignoresSafeArea()
                 
                 VStack {
                     Text("SOLANA")
-                        .font(.largeTitle)
                         .padding()
                         .fontWeight(.bold)
+                        .font(.custom("RobotoBold", size: 70))
                         .foregroundColor(.white)
-                        .padding()
-                        .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
-                        
                     
                     Spacer()
                     
-                    
-                    Button("Iniciar sesion") {
+                    NavigationLink(destination: InicioSesionView()) {
                         
-                    }//end button
-                    .padding()
-                    .foregroundColor(.black)
-                    .frame(width:150, height:50)
-                    .background(.white)
-                    .cornerRadius(15)
-                    .padding()
-                    
-                    
-                    Button("Registrarse") {
+                        Text("Iniciar sesion")
+                            .padding()
+                            .font(.custom("Roboto", size: 25))
+                            .foregroundColor(.black)
+                            .frame(width:200, height:70)
+                            .background(.white.opacity(0.8))
+                            .cornerRadius(15)
+                            .padding()
                         
-                    } //end button
-                    .padding()
-                    .foregroundColor(.black)
-                    .frame(width:150, height:50)
-                    .background(.white)
-                    .cornerRadius(15)
-                    .padding()
+                    }
+                    
+                    NavigationLink(destination: RegistroView()) {
+                        
+                        Text("Registrarse")
+                            .padding()
+                            .font(.custom("Roboto", size: 25))
+                            .foregroundColor(.black)
+                            .frame(width:200, height:70)
+                            .background(.white.opacity(0.8))
+                            .cornerRadius(15)
+                            .padding()
+                        
+                    }
                     
                     Spacer()
                     
                     Image("Solana")
                         .resizable()
                         .frame(width:300, height:300)
-                                        //Imagen
+                        .padding()
                 }
                 
                 
             }
-            
             
         }
         
