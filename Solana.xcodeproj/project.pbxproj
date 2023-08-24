@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1988ACCE2A97CCE10052567A /* ObjectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1988ACCD2A97CCE10052567A /* ObjectView.swift */; };
 		1A3E93A52A96DF5F00EE228C /* InicioSesionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A3E93A42A96DF5F00EE228C /* InicioSesionView.swift */; };
 		1A3EDD082A96CA2B0064D280 /* SolanaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A3EDD072A96CA2B0064D280 /* SolanaApp.swift */; };
 		1A3EDD0A2A96CA2B0064D280 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A3EDD092A96CA2B0064D280 /* ContentView.swift */; };
@@ -38,6 +39,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1988ACCD2A97CCE10052567A /* ObjectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectView.swift; sourceTree = "<group>"; };
 		1A3E93A42A96DF5F00EE228C /* InicioSesionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InicioSesionView.swift; sourceTree = "<group>"; };
 		1A3EDD042A96CA2B0064D280 /* Solana.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Solana.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A3EDD072A96CA2B0064D280 /* SolanaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SolanaApp.swift; sourceTree = "<group>"; };
@@ -144,6 +146,7 @@
 				1A3EDD092A96CA2B0064D280 /* ContentView.swift */,
 				1A3E93A42A96DF5F00EE228C /* InicioSesionView.swift */,
 				1A3EDD402A96E8BE0064D280 /* RegistroView.swift */,
+				1988ACCD2A97CCE10052567A /* ObjectView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -287,6 +290,7 @@
 			files = (
 				1A3EDD112A96CA2D0064D280 /* Persistence.swift in Sources */,
 				1A3E93A52A96DF5F00EE228C /* InicioSesionView.swift in Sources */,
+				1988ACCE2A97CCE10052567A /* ObjectView.swift in Sources */,
 				1A3EDD142A96CA2D0064D280 /* Solana.xcdatamodeld in Sources */,
 				1A3EDD412A96E8BE0064D280 /* RegistroView.swift in Sources */,
 				1A3EDD0A2A96CA2B0064D280 /* ContentView.swift in Sources */,
