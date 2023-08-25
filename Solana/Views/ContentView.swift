@@ -30,11 +30,11 @@ struct InitialView: View {
                         
                         Text("Iniciar sesion")
                             .padding()
-                            .font(.custom("Roboto", size: 30))
+                            .font(.custom("Roboto", size: 20))
                             .foregroundColor(.black)
-                            .frame(width:250, height:70)
+                            .frame(width:250, height:60)
                             .background(.black.opacity(0.1))
-                            .cornerRadius(10)
+                            .cornerRadius(7)
                             .padding()
                         
                     }
@@ -44,11 +44,11 @@ struct InitialView: View {
                         
                         Text("Registrarse")
                             .padding()
-                            .font(.custom("Roboto", size: 30))
+                            .font(.custom("Roboto", size: 20))
                             .foregroundColor(.black)
-                            .frame(width:250, height:70)
+                            .frame(width:250, height:60)
                             .background(.black.opacity(0.1))
-                            .cornerRadius(10)
+                            .cornerRadius(7)
                             .padding(.bottom, 60)
                         
                     }
