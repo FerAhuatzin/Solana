@@ -9,7 +9,7 @@ import SwiftUI
 
 struct InicioSesionView: View {
     @State var contraseña = ""
-    @State var correo = ""
+    @State var user = ""
     @State var recuperarContraseña = ""
     var body: some View {
         NavigationStack{
@@ -17,22 +17,27 @@ struct InicioSesionView: View {
             VStack {
                 
                 
+                Text("SOLANA")
+                    .padding(.top, 50.0)
                     
+                    .fontWeight(.bold)
+                    .font(.custom("RobotoBold", size: 70))
+                    .foregroundColor(Color(red: 0.338, green: 0.44, blue: 0.962))
                 
                 Text("Inicio sesion")
-                    .padding(.bottom, 100)
-                    .padding(.top,50)
-                    .font(.custom("Roboto",size: 50))
+                    .padding(.bottom, 40)
+                    .font(.custom("Roboto",size: 40))
                     .font(.title)
                     .foregroundColor(Color.black)
                  
                 
-                TextField("Correo electrónico", text:$correo )
+                TextField("Usuario", text:$user )
                 .padding()
                 .frame(width: 250, height: 50.0)
                 .foregroundColor(.black)
                 .background(Color.black.opacity(0.05))
                 .cornerRadius(10)
+                .padding()
                 
                 SecureField("Contraseña", text: $contraseña)
                 .padding()
@@ -45,26 +50,28 @@ struct InicioSesionView: View {
                 {
                     
                 }
+                .padding()
                 .font(.custom("Roboto",size: 13))
+                .foregroundColor(Color(red: 0.338, green: 0.44, blue: 0.962))
 
                 
-                Button("Continuar"){
-                    
+                NavigationLink(destination: ObjectView(username: user))
+                {
+                    Text("Conitnuar")
+                        .frame(width: 125.0, height: 50.0)
+                        .foregroundColor(.black)
+                        .background(Color.black.opacity(0.05))
+                        .cornerRadius(10)
+                        .padding(.top,40)
                 }
-                .frame(width: 125.0, height: 50.0)
-                .foregroundColor(.black)
-                .background(Color.black.opacity(0.05))
-                .cornerRadius(10)
-                .padding()
+                
                 
                 Spacer()
                 Image("Solana")
                     .resizable()
                     .frame(width:200, height:200)
                 
-                Text("SOLANA")
-                    .font(.custom("Roboto",size: 50))
-                    .foregroundColor(Color(red: 0.338, green: 0.44, blue: 0.962))
+                
                 
             }
    
