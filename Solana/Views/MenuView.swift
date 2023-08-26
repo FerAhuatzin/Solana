@@ -15,42 +15,58 @@ struct MenuView: View {
             HStack {
                 Text("Hola" )
                     .font(.custom("Roboto",size: 40))
-                    
+       
                     
                 Text(username)
                     .font(.custom("Roboto",size: 40))
                     .foregroundColor(Color(red: 0.338, green: 0.44, blue: 0.962))
                 
             }
+            .padding(.top,50)
             Text("Soy Solana")
                 .font(.custom("Roboto",size: 30))
             Text("¿Qué necesitas hoy?")
+
                 .font(.custom("Roboto",size: 25))
             
             List () {
                 HStack {
-                    //Icono seccion
+                    Image("Cabeza solana")
+                        .resizable()
+                        .frame(width:50, height:50)
                     Text("Hablar conmigo")
                 }
                 HStack {
-                    //Icono seccion
+                    Image("Liston")
+                        .resizable()
+                        .frame(width:50, height:50)
                     Text("Saber más del cancer")
                 }
                 HStack {
-                    //Icono seccion
+                    Image(systemName:"brain.head.profile")
+                        .resizable()
+                        .frame(width:42, height:50)
+                        .foregroundColor(Color(red: 0.338, green: 0.44, blue: 0.962))
                     Text("Conocer estrategias de afrontamiento")
+                        .padding(.leading,10)
                 }
                 HStack {
-                    //Icono seccion
+                    Image(systemName: "text.below.photo")
+                        .resizable()
+                        .frame(width:42, height:50)
+                        .foregroundColor(Color(red: 0.338, green: 0.44, blue: 0.962))
                     Text("Ver muro")
+                        .padding(.leading,10)
                 }
                 HStack {
-                    //Icono seccion
+                    Image(systemName: "list.bullet.clipboard")
+                        .resizable()
+                        .frame(width:42, height:50)
+                        .foregroundColor(Color(red: 0.338, green: 0.44, blue: 0.962))
                     Text("Contactar un especialista")
                 }
             } //end list
-            .padding(.bottom,80)
-            .padding(.top,80)
+            
             
             Spacer()
             Image("Solana")

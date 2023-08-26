@@ -27,7 +27,7 @@ struct RegistroView: View {
             VStack {
                 
                 Text("SOLANA")
-                    .padding(.top, 0.0)
+                    //.padding(.top, 0.0)
                     .fontWeight(.bold)
                     .font(.custom("RobotoBold", size: 70))
                     .foregroundColor(Color(red: 0.338, green: 0.44, blue: 0.962))
