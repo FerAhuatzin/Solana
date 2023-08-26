@@ -23,6 +23,7 @@ struct MenuView: View {
                 
             }
             .padding(.top,50)
+            .navigationBarBackButtonHidden(true)
             Text("Soy Solana")
                 .font(.custom("Roboto",size: 30))
             Text("¿Qué necesitas hoy?")
@@ -35,12 +36,18 @@ struct MenuView: View {
                         .resizable()
                         .frame(width:50, height:50)
                     Text("Hablar conmigo")
+                    NavigationLink (destination: SolanaView()) {
+                        
+                    }
                 }
                 HStack {
                     Image("Liston")
                         .resizable()
                         .frame(width:50, height:50)
                     Text("Saber más del cancer")
+                    NavigationLink (destination: CancerView()) {
+                        
+                    }
                 }
                 HStack {
                     Image(systemName:"brain.head.profile")
@@ -49,6 +56,9 @@ struct MenuView: View {
                         .foregroundColor(Color(red: 0.338, green: 0.44, blue: 0.962))
                     Text("Conocer estrategias de afrontamiento")
                         .padding(.leading,10)
+                    NavigationLink (destination: CopingView()) {
+                        
+                    }
                 }
                 HStack {
                     Image(systemName: "text.below.photo")
@@ -57,6 +67,9 @@ struct MenuView: View {
                         .foregroundColor(Color(red: 0.338, green: 0.44, blue: 0.962))
                     Text("Ver muro")
                         .padding(.leading,10)
+                    NavigationLink (destination: WallView()) {
+                        
+                    }
                 }
                 HStack {
                     Image(systemName: "list.bullet.clipboard")
@@ -64,6 +77,10 @@ struct MenuView: View {
                         .frame(width:42, height:50)
                         .foregroundColor(Color(red: 0.338, green: 0.44, blue: 0.962))
                     Text("Contactar un especialista")
+                        .padding(.leading,10)
+                    NavigationLink (destination: SpecialistView()) {
+                        
+                    }
                 }
             } //end list
             

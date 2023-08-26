@@ -20,6 +20,11 @@
 		1A3EDD2A2A96CA2D0064D280 /* SolanaUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A3EDD292A96CA2D0064D280 /* SolanaUITestsLaunchTests.swift */; };
 		1A3EDD412A96E8BE0064D280 /* RegistroView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A3EDD402A96E8BE0064D280 /* RegistroView.swift */; };
 		1A5342442A9A9D6200E45B66 /* TermsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A5342432A9A9D6200E45B66 /* TermsView.swift */; };
+		1A5342482A9AAF3300E45B66 /* SolanaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A5342472A9AAF3300E45B66 /* SolanaView.swift */; };
+		1A53424A2A9AAF4500E45B66 /* CancerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A5342492A9AAF4500E45B66 /* CancerView.swift */; };
+		1A53424C2A9AAF5C00E45B66 /* CopingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A53424B2A9AAF5C00E45B66 /* CopingView.swift */; };
+		1A53424E2A9AAF6C00E45B66 /* WallView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A53424D2A9AAF6C00E45B66 /* WallView.swift */; };
+		1A5342502A9AAF7D00E45B66 /* SpecialistView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A53424F2A9AAF7D00E45B66 /* SpecialistView.swift */; };
 		1A844A242A98377B009985D6 /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A844A232A98377B009985D6 /* MenuView.swift */; };
 /* End PBXBuildFile section */
 
@@ -57,6 +62,11 @@
 		1A3EDD292A96CA2D0064D280 /* SolanaUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SolanaUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		1A3EDD402A96E8BE0064D280 /* RegistroView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistroView.swift; sourceTree = "<group>"; };
 		1A5342432A9A9D6200E45B66 /* TermsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TermsView.swift; sourceTree = "<group>"; };
+		1A5342472A9AAF3300E45B66 /* SolanaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SolanaView.swift; sourceTree = "<group>"; };
+		1A5342492A9AAF4500E45B66 /* CancerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CancerView.swift; sourceTree = "<group>"; };
+		1A53424B2A9AAF5C00E45B66 /* CopingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CopingView.swift; sourceTree = "<group>"; };
+		1A53424D2A9AAF6C00E45B66 /* WallView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WallView.swift; sourceTree = "<group>"; };
+		1A53424F2A9AAF7D00E45B66 /* SpecialistView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpecialistView.swift; sourceTree = "<group>"; };
 		1A844A232A98377B009985D6 /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -147,6 +157,7 @@
 		1A3EDD362A96CAEC0064D280 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				1A5342452A9AAEFB00E45B66 /* ViewsFromMenu */,
 				1A3EDD092A96CA2B0064D280 /* ContentView.swift */,
 				1A3E93A42A96DF5F00EE228C /* InicioSesionView.swift */,
 				1A3EDD402A96E8BE0064D280 /* RegistroView.swift */,
@@ -162,6 +173,18 @@
 			children = (
 			);
 			path = Managers;
+			sourceTree = "<group>";
+		};
+		1A5342452A9AAEFB00E45B66 /* ViewsFromMenu */ = {
+			isa = PBXGroup;
+			children = (
+				1A5342472A9AAF3300E45B66 /* SolanaView.swift */,
+				1A5342492A9AAF4500E45B66 /* CancerView.swift */,
+				1A53424B2A9AAF5C00E45B66 /* CopingView.swift */,
+				1A53424D2A9AAF6C00E45B66 /* WallView.swift */,
+				1A53424F2A9AAF7D00E45B66 /* SpecialistView.swift */,
+			);
+			path = ViewsFromMenu;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -298,11 +321,16 @@
 				1A5342442A9A9D6200E45B66 /* TermsView.swift in Sources */,
 				1A844A242A98377B009985D6 /* MenuView.swift in Sources */,
 				1A3E93A52A96DF5F00EE228C /* InicioSesionView.swift in Sources */,
+				1A5342482A9AAF3300E45B66 /* SolanaView.swift in Sources */,
 				1988ACCE2A97CCE10052567A /* ObjectView.swift in Sources */,
 				1A3EDD142A96CA2D0064D280 /* Solana.xcdatamodeld in Sources */,
+				1A53424E2A9AAF6C00E45B66 /* WallView.swift in Sources */,
 				1A3EDD412A96E8BE0064D280 /* RegistroView.swift in Sources */,
+				1A5342502A9AAF7D00E45B66 /* SpecialistView.swift in Sources */,
 				1A3EDD0A2A96CA2B0064D280 /* ContentView.swift in Sources */,
 				1A3EDD082A96CA2B0064D280 /* SolanaApp.swift in Sources */,
+				1A53424C2A9AAF5C00E45B66 /* CopingView.swift in Sources */,
+				1A53424A2A9AAF4500E45B66 /* CancerView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
