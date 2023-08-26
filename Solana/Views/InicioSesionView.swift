@@ -9,60 +9,60 @@ import SwiftUI
 
 struct InicioSesionView: View {
     @State var contraseña = ""
-    @State var username = ""
+    @State var user = ""
     @State var recuperarContraseña = ""
     var body: some View {
         NavigationStack{
             
             VStack {
                 
+                
                 Text("SOLANA")
-                    .font(.custom("Roboto",size: 70))
-                    .foregroundColor(Color(red: 0.338, green: 0.44, blue: 0.962))
-                    .padding(.top, 50)
+                    .padding(.top, 50.0)
                     
+                    .fontWeight(.bold)
+                    .font(.custom("RobotoBold", size: 70))
+                    .foregroundColor(Color(red: 0.338, green: 0.44, blue: 0.962))
                 
                 Text("Inicio sesion")
-                    .padding(.bottom, 80)
+                    .padding(.bottom, 40)
                     .font(.custom("Roboto",size: 40))
                     .font(.title)
                     .foregroundColor(Color.black)
                  
                 
-                TextField("Nombre de usuario", text:$username )
+                TextField("Usuario", text:$user )
+                .padding()
                 .frame(width: 250, height: 50.0)
-                .font(.custom("Roboto",size: 20))
                 .foregroundColor(.black)
                 .background(Color.black.opacity(0.05))
-                .cornerRadius(7)
+                .cornerRadius(10)
                 .padding()
                 
-            
                 SecureField("Contraseña", text: $contraseña)
                 .padding()
                 .frame(width: 250, height: 50.0)
-                .font(.custom("Roboto",size: 20))
                 .foregroundColor(.black)
                 .background(Color.black.opacity(0.05))
-                .cornerRadius(7)
+                .cornerRadius(10)
                 
                 NavigationLink("Recuperar contraseña")
                 {
                     
                 }
-                .font(.custom("Roboto",size: 15))
-                .padding(.top,30)
+                .padding()
+                .font(.custom("Roboto",size: 13))
+                .foregroundColor(Color(red: 0.338, green: 0.44, blue: 0.962))
 
                 
-                NavigationLink(destination: MenuView(username: username)){
-                    Text("Continuar")
+                NavigationLink(destination: ObjectView(username: user))
+                {
+                    Text("Conitnuar")
                         .frame(width: 125.0, height: 50.0)
-                        .font(.custom("Roboto",size: 20))
                         .foregroundColor(.black)
                         .background(Color.black.opacity(0.05))
                         .cornerRadius(10)
-                        .padding()
-                    
+                        .padding(.top,40)
                 }
                 
                 
@@ -74,12 +74,6 @@ struct InicioSesionView: View {
                 
                 
             }
-   
-            /*Text("Bienvenido a")
-                .padding(.top, 80.0)
-                //.padding(30)
-                .font(.title)
-                .foregroundColor(Color.black)*/
             
         }
     }
