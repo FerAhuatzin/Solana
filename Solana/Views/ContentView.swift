@@ -25,6 +25,7 @@ struct InitialView: View {
                         .fontWeight(.bold)
                         .font(.custom("RobotoBold", size: 70))
                         .foregroundColor(Color(red: 0.338, green: 0.44, blue: 0.962))
+                    Spacer()
                     
                     NavigationLink(destination: InicioSesionView()) {
                         
@@ -49,9 +50,11 @@ struct InitialView: View {
                             .frame(width:250, height:60)
                             .background(.black.opacity(0.1))
                             .cornerRadius(7)
-                            .padding(.bottom, 60)
+                            .padding(.bottom, 90)
                         
                     }
+                    
+                    Spacer()
                     
                     Image("Solana")
                         .resizable()

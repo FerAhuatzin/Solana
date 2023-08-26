@@ -14,7 +14,7 @@ struct TermsView: View {
               Text("Términos y condiciones")
                   .font(.custom("Roboto",size: 45))
                   .foregroundColor(Color(red: 0.338, green: 0.44, blue: 0.962))
-                  .padding(.top, 50.0)
+                  //.padding(.top, 50.0)
                   
 
               

@@ -18,7 +18,7 @@ struct InicioSesionView: View {
                 
                 
                 Text("SOLANA")
-                    .padding(.top, 50.0)
+                    //.padding(.top, 50.0)
                     .fontWeight(.bold)
                     .font(.custom("RobotoBold", size: 70))
                     .foregroundColor(Color(red: 0.338, green: 0.44, blue: 0.962))
@@ -65,6 +65,7 @@ struct InicioSesionView: View {
                         .background(Color.black.opacity(0.05))
                         .cornerRadius(10)
                         .padding(.top,40)
+                        .padding(.bottom,20)
                 }
                 
                 
