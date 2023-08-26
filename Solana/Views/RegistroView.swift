@@ -39,6 +39,7 @@ struct RegistroView: View {
                     .foregroundColor(Color.black)
                  
                 
+                
                 TextField("Nombre de usuario", text: $username)
                     .frame(width: 300, height: 50.0)
                     .foregroundColor(.black)
@@ -107,8 +108,9 @@ struct RegistroView: View {
                         
                         HStack {
                             Text ("Aceptar" )
-                            NavigationLink("terminos y condiciones")
+                            NavigationLink(destination: TermsView())
                             {
+                                Text("terminos y condiciones")
 
                             }
                             .foregroundColor(Color(red: 0.338, green: 0.44, blue: 0.962))
