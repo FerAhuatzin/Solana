@@ -127,7 +127,7 @@ struct RegistroView: View {
 
                 }
                  
-                NavigationLink(destination: ObjectView(username: username))
+                NavigationLink(destination: ObjectView(username: name))
                 {
                     Text("Continuar")
                         .frame(width: 125.0, height: 50.0)

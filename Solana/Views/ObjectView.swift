@@ -15,6 +15,7 @@ struct ObjectView: View {
                 HStack {
                     Text("Hola" )
                         .font(.custom("Roboto",size: 40))
+                        .navigationBarBackButtonHidden(true)
                         
                         
                     Text(username)
