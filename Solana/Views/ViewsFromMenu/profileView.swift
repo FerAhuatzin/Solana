@@ -9,7 +9,7 @@ import SwiftUI
 
 
 
-struct profileView: View {
+struct ProfileView: View {
     
     @State var username: String
     @State var email: String
@@ -74,6 +74,6 @@ struct profileView: View {
 
 struct profileView_Previews: PreviewProvider {
     static var previews: some View {
-        profileView(username: "fernando", email: "fernando@gmail.com", city: "Puebla")
+        ProfileView(username: "fernando", email: "fernando@gmail.com", city: "Puebla")
     }
 }

@@ -14,7 +14,7 @@ struct MenuView: View {
             VStack {
                 
                 HStack {
-                    NavigationLink(destination: profileView(username: username, email: "emailUsuario@solana.com", city: "Ciudad del usuario")) {
+                    NavigationLink(destination: ProfileView(username: username, email: "emailUsuario@solana.com", city: "Ciudad del usuario")){
                         Image(systemName: "person.circle.fill")
                             .foregroundColor(Color(red: 0.338, green: 0.44, blue: 0.962))
                             .font(.system(size:40))
