@@ -23,7 +23,7 @@ func getResponse(message:String)->String {
                 return "No hay de que, espero que todo salga bien"
             }
             else {
-                if (tempMessage.contains("adios")) {
+                if (tempMessage.contains("adiós")) {
                     return "adios"
                 }
                 else {
