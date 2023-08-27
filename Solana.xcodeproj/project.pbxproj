@@ -12,6 +12,9 @@
 		1A24AACC2A9ADA4700DE6427 /* CopingStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A24AACB2A9ADA4700DE6427 /* CopingStrategy.swift */; };
 		1A24AACE2A9ADB1300DE6427 /* CopingDefinitionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A24AACD2A9ADB1300DE6427 /* CopingDefinitionView.swift */; };
 		1A24AAD02A9AE56300DE6427 /* CopingDefinitions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A24AACF2A9AE56300DE6427 /* CopingDefinitions.swift */; };
+		1A24AAD22A9AECAD00DE6427 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A24AAD12A9AECAD00DE6427 /* Post.swift */; };
+		1A24AAD42A9AFA2600DE6427 /* profileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A24AAD32A9AFA2600DE6427 /* profileView.swift */; };
+		1A24AAD62A9B03FD00DE6427 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A24AAD52A9B03FD00DE6427 /* User.swift */; };
 		1A3E93A52A96DF5F00EE228C /* InicioSesionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A3E93A42A96DF5F00EE228C /* InicioSesionView.swift */; };
 		1A3EDD082A96CA2B0064D280 /* SolanaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A3EDD072A96CA2B0064D280 /* SolanaApp.swift */; };
 		1A3EDD0A2A96CA2B0064D280 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A3EDD092A96CA2B0064D280 /* ContentView.swift */; };
@@ -55,6 +58,9 @@
 		1A24AACB2A9ADA4700DE6427 /* CopingStrategy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CopingStrategy.swift; sourceTree = "<group>"; };
 		1A24AACD2A9ADB1300DE6427 /* CopingDefinitionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CopingDefinitionView.swift; sourceTree = "<group>"; };
 		1A24AACF2A9AE56300DE6427 /* CopingDefinitions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CopingDefinitions.swift; sourceTree = "<group>"; };
+		1A24AAD12A9AECAD00DE6427 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		1A24AAD32A9AFA2600DE6427 /* profileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = profileView.swift; sourceTree = "<group>"; };
+		1A24AAD52A9B03FD00DE6427 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		1A3E93A42A96DF5F00EE228C /* InicioSesionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InicioSesionView.swift; sourceTree = "<group>"; };
 		1A3EDD042A96CA2B0064D280 /* Solana.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Solana.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A3EDD072A96CA2B0064D280 /* SolanaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SolanaApp.swift; sourceTree = "<group>"; };
@@ -108,6 +114,8 @@
 			children = (
 				1A24AACB2A9ADA4700DE6427 /* CopingStrategy.swift */,
 				1A24AACF2A9AE56300DE6427 /* CopingDefinitions.swift */,
+				1A24AAD12A9AECAD00DE6427 /* Post.swift */,
+				1A24AAD52A9B03FD00DE6427 /* User.swift */,
 			);
 			path = Structs;
 			sourceTree = "<group>";
@@ -203,6 +211,7 @@
 				1A53424D2A9AAF6C00E45B66 /* WallView.swift */,
 				1A53424F2A9AAF7D00E45B66 /* SpecialistView.swift */,
 				1A24AACD2A9ADB1300DE6427 /* CopingDefinitionView.swift */,
+				1A24AAD32A9AFA2600DE6427 /* profileView.swift */,
 			);
 			path = ViewsFromMenu;
 			sourceTree = "<group>";
@@ -349,12 +358,15 @@
 				1A3EDD142A96CA2D0064D280 /* Solana.xcdatamodeld in Sources */,
 				1A53424E2A9AAF6C00E45B66 /* WallView.swift in Sources */,
 				1A3EDD412A96E8BE0064D280 /* RegistroView.swift in Sources */,
+				1A24AAD42A9AFA2600DE6427 /* profileView.swift in Sources */,
 				1A24AAD02A9AE56300DE6427 /* CopingDefinitions.swift in Sources */,
 				1A5342502A9AAF7D00E45B66 /* SpecialistView.swift in Sources */,
 				1A3EDD0A2A96CA2B0064D280 /* ContentView.swift in Sources */,
 				1A3EDD082A96CA2B0064D280 /* SolanaApp.swift in Sources */,
+				1A24AAD22A9AECAD00DE6427 /* Post.swift in Sources */,
 				1A53424C2A9AAF5C00E45B66 /* CopingView.swift in Sources */,
 				1A53424A2A9AAF4500E45B66 /* CancerView.swift in Sources */,
+				1A24AAD62A9B03FD00DE6427 /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

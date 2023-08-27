@@ -94,13 +94,21 @@ struct RegistroView: View {
                         .cornerRadius(10)
                     
                 }
+                VStack {
+                    TextField("Tipo de cancer", text: $cancerType)
+                        .frame(width: 300, height: 50.0)
+                        .foregroundColor(.black)
+                        .background(Color.black.opacity(0.05))
+                        .font(.custom("Roboto", size: 20))
+                        .cornerRadius(10)
+                    TextField("Ciudad", text: $city)
+                        .frame(width: 300, height: 50.0)
+                        .foregroundColor(.black)
+                        .background(Color.black.opacity(0.05))
+                        .font(.custom("Roboto", size: 20))
+                        .cornerRadius(10)
+                }
                 
-                TextField("Ciudad", text: $city)
-                    .frame(width: 300, height: 50.0)
-                    .foregroundColor(.black)
-                    .background(Color.black.opacity(0.05))
-                    .font(.custom("Roboto", size: 20))
-                    .cornerRadius(10)
                 
                 HStack {
                     
