@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		1988ACCE2A97CCE10052567A /* ObjectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1988ACCD2A97CCE10052567A /* ObjectView.swift */; };
 		1A24AAC92A9ACBE000DE6427 /* solanaManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A24AAC82A9ACBE000DE6427 /* solanaManager.swift */; };
+		1A24AACC2A9ADA4700DE6427 /* CopingStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A24AACB2A9ADA4700DE6427 /* CopingStrategy.swift */; };
+		1A24AACE2A9ADB1300DE6427 /* CopingDefinitionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A24AACD2A9ADB1300DE6427 /* CopingDefinitionView.swift */; };
+		1A24AAD02A9AE56300DE6427 /* CopingDefinitions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A24AACF2A9AE56300DE6427 /* CopingDefinitions.swift */; };
 		1A3E93A52A96DF5F00EE228C /* InicioSesionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A3E93A42A96DF5F00EE228C /* InicioSesionView.swift */; };
 		1A3EDD082A96CA2B0064D280 /* SolanaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A3EDD072A96CA2B0064D280 /* SolanaApp.swift */; };
 		1A3EDD0A2A96CA2B0064D280 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A3EDD092A96CA2B0064D280 /* ContentView.swift */; };
@@ -49,6 +52,9 @@
 /* Begin PBXFileReference section */
 		1988ACCD2A97CCE10052567A /* ObjectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectView.swift; sourceTree = "<group>"; };
 		1A24AAC82A9ACBE000DE6427 /* solanaManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = solanaManager.swift; sourceTree = "<group>"; };
+		1A24AACB2A9ADA4700DE6427 /* CopingStrategy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CopingStrategy.swift; sourceTree = "<group>"; };
+		1A24AACD2A9ADB1300DE6427 /* CopingDefinitionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CopingDefinitionView.swift; sourceTree = "<group>"; };
+		1A24AACF2A9AE56300DE6427 /* CopingDefinitions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CopingDefinitions.swift; sourceTree = "<group>"; };
 		1A3E93A42A96DF5F00EE228C /* InicioSesionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InicioSesionView.swift; sourceTree = "<group>"; };
 		1A3EDD042A96CA2B0064D280 /* Solana.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Solana.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A3EDD072A96CA2B0064D280 /* SolanaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SolanaApp.swift; sourceTree = "<group>"; };
@@ -97,6 +103,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1A24AACA2A9ADA1700DE6427 /* Structs */ = {
+			isa = PBXGroup;
+			children = (
+				1A24AACB2A9ADA4700DE6427 /* CopingStrategy.swift */,
+				1A24AACF2A9AE56300DE6427 /* CopingDefinitions.swift */,
+			);
+			path = Structs;
+			sourceTree = "<group>";
+		};
 		1A3EDCFB2A96CA2B0064D280 = {
 			isa = PBXGroup;
 			children = (
@@ -120,6 +135,7 @@
 		1A3EDD062A96CA2B0064D280 /* Solana */ = {
 			isa = PBXGroup;
 			children = (
+				1A24AACA2A9ADA1700DE6427 /* Structs */,
 				1A3EDD072A96CA2B0064D280 /* SolanaApp.swift */,
 				1A3EDD372A96CAF80064D280 /* Managers */,
 				1A3EDD362A96CAEC0064D280 /* Views */,
@@ -186,6 +202,7 @@
 				1A53424B2A9AAF5C00E45B66 /* CopingView.swift */,
 				1A53424D2A9AAF6C00E45B66 /* WallView.swift */,
 				1A53424F2A9AAF7D00E45B66 /* SpecialistView.swift */,
+				1A24AACD2A9ADB1300DE6427 /* CopingDefinitionView.swift */,
 			);
 			path = ViewsFromMenu;
 			sourceTree = "<group>";
@@ -322,7 +339,9 @@
 			files = (
 				1A24AAC92A9ACBE000DE6427 /* solanaManager.swift in Sources */,
 				1A3EDD112A96CA2D0064D280 /* Persistence.swift in Sources */,
+				1A24AACC2A9ADA4700DE6427 /* CopingStrategy.swift in Sources */,
 				1A5342442A9A9D6200E45B66 /* TermsView.swift in Sources */,
+				1A24AACE2A9ADB1300DE6427 /* CopingDefinitionView.swift in Sources */,
 				1A844A242A98377B009985D6 /* MenuView.swift in Sources */,
 				1A3E93A52A96DF5F00EE228C /* InicioSesionView.swift in Sources */,
 				1A5342482A9AAF3300E45B66 /* SolanaView.swift in Sources */,
@@ -330,6 +349,7 @@
 				1A3EDD142A96CA2D0064D280 /* Solana.xcdatamodeld in Sources */,
 				1A53424E2A9AAF6C00E45B66 /* WallView.swift in Sources */,
 				1A3EDD412A96E8BE0064D280 /* RegistroView.swift in Sources */,
+				1A24AAD02A9AE56300DE6427 /* CopingDefinitions.swift in Sources */,
 				1A5342502A9AAF7D00E45B66 /* SpecialistView.swift in Sources */,
 				1A3EDD0A2A96CA2B0064D280 /* ContentView.swift in Sources */,
 				1A3EDD082A96CA2B0064D280 /* SolanaApp.swift in Sources */,
