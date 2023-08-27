@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		190EC1512A9AE32F000305B7 /* TypesStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 190EC1502A9AE32F000305B7 /* TypesStruct.swift */; };
+		190EC1552A9AFC74000305B7 /* TypesArrayStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 190EC1542A9AFC73000305B7 /* TypesArrayStruct.swift */; };
 		1988ACCE2A97CCE10052567A /* ObjectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1988ACCD2A97CCE10052567A /* ObjectView.swift */; };
 		1A24AAC92A9ACBE000DE6427 /* solanaManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A24AAC82A9ACBE000DE6427 /* solanaManager.swift */; };
 		1A3E93A52A96DF5F00EE228C /* InicioSesionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A3E93A42A96DF5F00EE228C /* InicioSesionView.swift */; };
@@ -47,6 +49,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		190EC1502A9AE32F000305B7 /* TypesStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypesStruct.swift; sourceTree = "<group>"; };
+		190EC1542A9AFC73000305B7 /* TypesArrayStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypesArrayStruct.swift; sourceTree = "<group>"; };
 		1988ACCD2A97CCE10052567A /* ObjectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectView.swift; sourceTree = "<group>"; };
 		1A24AAC82A9ACBE000DE6427 /* solanaManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = solanaManager.swift; sourceTree = "<group>"; };
 		1A3E93A42A96DF5F00EE228C /* InicioSesionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InicioSesionView.swift; sourceTree = "<group>"; };
@@ -166,6 +170,8 @@
 				1988ACCD2A97CCE10052567A /* ObjectView.swift */,
 				1A844A232A98377B009985D6 /* MenuView.swift */,
 				1A5342432A9A9D6200E45B66 /* TermsView.swift */,
+				190EC1502A9AE32F000305B7 /* TypesStruct.swift */,
+				190EC1542A9AFC73000305B7 /* TypesArrayStruct.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -326,9 +332,11 @@
 				1A844A242A98377B009985D6 /* MenuView.swift in Sources */,
 				1A3E93A52A96DF5F00EE228C /* InicioSesionView.swift in Sources */,
 				1A5342482A9AAF3300E45B66 /* SolanaView.swift in Sources */,
+				190EC1512A9AE32F000305B7 /* TypesStruct.swift in Sources */,
 				1988ACCE2A97CCE10052567A /* ObjectView.swift in Sources */,
 				1A3EDD142A96CA2D0064D280 /* Solana.xcdatamodeld in Sources */,
 				1A53424E2A9AAF6C00E45B66 /* WallView.swift in Sources */,
+				190EC1552A9AFC74000305B7 /* TypesArrayStruct.swift in Sources */,
 				1A3EDD412A96E8BE0064D280 /* RegistroView.swift in Sources */,
 				1A5342502A9AAF7D00E45B66 /* SpecialistView.swift in Sources */,
 				1A3EDD0A2A96CA2B0064D280 /* ContentView.swift in Sources */,
