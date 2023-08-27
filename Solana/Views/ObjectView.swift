@@ -30,14 +30,14 @@ struct ObjectView: View {
                 
                 Text("Soy una apliación para pacientes con diagnóstico de cáncer \n \nAquí puedes encontrar estrategias de afrontamiento, información sobre el cancer, podrás interactuar con otras personas, contactar a especialistas y si necesitas ayuda siempre podrás chatear conmigo")
                     .multilineTextAlignment(.center)
-                    .padding(.top)
+                    .padding(.top,60)
                     .padding(.trailing,40)
                     .padding(.leading,40)
                     .font(.custom("Roboto", size: 20))
                 
                 NavigationLink(destination: MenuView(username: username))
                 {
-                    Text("Conitnuar")
+                    Text("Continuar")
                         .frame(width: 125.0, height: 50.0)
                         .foregroundColor(.black)
                         .background(Color.black.opacity(0.05))

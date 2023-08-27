@@ -18,14 +18,14 @@ struct InicioSesionView: View {
                 
                 
                 Text("SOLANA")
-                    //.padding(.top, 50.0)
+                    .padding(.top,50)
                     .fontWeight(.bold)
-                    .font(.custom("RobotoBold", size: 70))
+                    .font(.custom("RobotoBold", size: 40))
                     .foregroundColor(Color(red: 0.338, green: 0.44, blue: 0.962))
                 
                 Text("Inicio sesion")
-                    .padding(.bottom, 40)
-                    .font(.custom("Roboto",size: 40))
+                    .padding(.bottom, 30)
+                    .font(.custom("Roboto",size: 30))
                     .font(.title)
                     .foregroundColor(Color.black)
                  

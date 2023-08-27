@@ -24,11 +24,10 @@ struct MenuView: View {
             }
             .padding(.top,50)
             .navigationBarBackButtonHidden(true)
-            Text("Soy Solana")
-                .font(.custom("Roboto",size: 30))
+
             Text("¿Qué necesitas hoy?")
 
-                .font(.custom("Roboto",size: 25))
+                .font(.custom("Roboto",size: 30))
             
             List () {
                 HStack {
