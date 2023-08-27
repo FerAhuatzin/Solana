@@ -34,7 +34,7 @@ struct InitialView: View {
                             .font(.custom("Roboto", size: 20))
                             .foregroundColor(.black)
                             .frame(width:250, height:60)
-                            .background(.black.opacity(0.1))
+                            .background(.black.opacity(0.05))
                             .cornerRadius(7)
                             .padding()
                         
@@ -48,7 +48,7 @@ struct InitialView: View {
                             .font(.custom("Roboto", size: 20))
                             .foregroundColor(.black)
                             .frame(width:250, height:60)
-                            .background(.black.opacity(0.1))
+                            .background(.black.opacity(0.05))
                             .cornerRadius(7)
                             .padding(.bottom, 90)
                         

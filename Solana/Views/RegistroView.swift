@@ -29,12 +29,12 @@ struct RegistroView: View {
                 Text("SOLANA")
                     //.padding(.top, 0.0)
                     .fontWeight(.bold)
-                    .font(.custom("RobotoBold", size: 70))
+                    .font(.custom("RobotoBold", size: 40))
                     .foregroundColor(Color(red: 0.338, green: 0.44, blue: 0.962))
                 
                 Text("Registro")
-                    .padding(.bottom, 20)
-                    .font(.custom("Roboto",size: 40))
+                    .padding(.bottom, 50)
+                    .font(.custom("Roboto",size: 30))
                     .font(.title)
                     .foregroundColor(Color.black)
                  
@@ -95,7 +95,7 @@ struct RegistroView: View {
                     
                 }
                 
-                TextField("City", text: $sex)
+                TextField("Ciudad", text: $city)
                     .frame(width: 300, height: 50.0)
                     .foregroundColor(.black)
                     .background(Color.black.opacity(0.05))
