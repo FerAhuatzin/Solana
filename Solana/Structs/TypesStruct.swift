@@ -10,11 +10,12 @@ import SwiftUI
 struct TypesStruct: View {
     var type : String
     var image : String
+    var cancer: CancerType
     
     var body: some View {
         HStack {
             
-            NavigationLink (destination: CancerView()) {
+            NavigationLink (destination: CancerDefinitionView(cancer: cancer)) {
                 Image(image)
                     .resizable()
                     .frame(width:50, height:50)
@@ -25,7 +26,7 @@ struct TypesStruct: View {
     
     struct TypesStruct_Previews: PreviewProvider {
         static var previews: some View {
-            TypesStruct(type: "", image: "")
+            TypesStruct(type: "", image: "", cancer: CancerType(name: "Cancer de mama", definition: "lorem ipsum", causes: "lorem ipsum", diagnosis: "lorem ipsum", treatment: "lorem ipsum"))
         }
     }
 }
