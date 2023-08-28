@@ -144,6 +144,7 @@ struct RegistroView: View {
                         .background(Color.black.opacity(0.05))
                         .cornerRadius(10)
                         .padding(.top,20)
+                        .padding()
                 }
                 
             }
