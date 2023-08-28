@@ -39,7 +39,7 @@ struct CopingView: View {
                     CopingStrategy(imageName: "figure.mind.and.body", copingName: "Técnicas de relajación física", definition: definitions.relaxation)
                     CopingStrategy(imageName: "lungs.fill", copingName: "Control de respiración", definition: definitions.breathing)
                     CopingStrategy(imageName: "fork.knife", copingName: "Hábitos saludables", definition: definitions.health)
-                    CopingStrategy(imageName: "book.closed.fill", copingName: "Acercamiento o encuentro espiritual: ", definition: definitions.religion)
+                    CopingStrategy(imageName: "book.closed.fill", copingName: "Acercamiento o encuentro espiritual", definition: definitions.religion)
                 }
                 
                 Spacer()

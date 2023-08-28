@@ -37,6 +37,10 @@
 		1A844A242A98377B009985D6 /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A844A232A98377B009985D6 /* MenuView.swift */; };
 		1AED486C2A9C0AF7009D13AF /* Specialist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AED486B2A9C0AF7009D13AF /* Specialist.swift */; };
 		1AED486E2A9C0C55009D13AF /* SpecialistRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AED486D2A9C0C55009D13AF /* SpecialistRow.swift */; };
+		1AED48702A9C1934009D13AF /* NewPostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AED486F2A9C1934009D13AF /* NewPostView.swift */; };
+		1AED48722A9C1C9C009D13AF /* CancerDefinitionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AED48712A9C1C9C009D13AF /* CancerDefinitionView.swift */; };
+		1AED48742A9C1EC4009D13AF /* CancerInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AED48732A9C1EC4009D13AF /* CancerInfo.swift */; };
+		1AED48762A9C1EF0009D13AF /* CancerType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AED48752A9C1EF0009D13AF /* CancerType.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -90,6 +94,10 @@
 		1A844A232A98377B009985D6 /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
 		1AED486B2A9C0AF7009D13AF /* Specialist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Specialist.swift; sourceTree = "<group>"; };
 		1AED486D2A9C0C55009D13AF /* SpecialistRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpecialistRow.swift; sourceTree = "<group>"; };
+		1AED486F2A9C1934009D13AF /* NewPostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewPostView.swift; sourceTree = "<group>"; };
+		1AED48712A9C1C9C009D13AF /* CancerDefinitionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CancerDefinitionView.swift; sourceTree = "<group>"; };
+		1AED48732A9C1EC4009D13AF /* CancerInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CancerInfo.swift; sourceTree = "<group>"; };
+		1AED48752A9C1EF0009D13AF /* CancerType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CancerType.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,6 +136,8 @@
 				1A24AAD52A9B03FD00DE6427 /* User.swift */,
 				1AED486B2A9C0AF7009D13AF /* Specialist.swift */,
 				1AED486D2A9C0C55009D13AF /* SpecialistRow.swift */,
+				1AED48732A9C1EC4009D13AF /* CancerInfo.swift */,
+				1AED48752A9C1EF0009D13AF /* CancerType.swift */,
 			);
 			path = Structs;
 			sourceTree = "<group>";
@@ -224,6 +234,8 @@
 				1A53424F2A9AAF7D00E45B66 /* SpecialistView.swift */,
 				1A24AACD2A9ADB1300DE6427 /* CopingDefinitionView.swift */,
 				1A24AAD32A9AFA2600DE6427 /* profileView.swift */,
+				1AED486F2A9C1934009D13AF /* NewPostView.swift */,
+				1AED48712A9C1C9C009D13AF /* CancerDefinitionView.swift */,
 			);
 			path = ViewsFromMenu;
 			sourceTree = "<group>";
@@ -369,6 +381,7 @@
 				1A5342482A9AAF3300E45B66 /* SolanaView.swift in Sources */,
 				190EC1512A9AE32F000305B7 /* TypesStruct.swift in Sources */,
 				1988ACCE2A97CCE10052567A /* ObjectView.swift in Sources */,
+				1AED48742A9C1EC4009D13AF /* CancerInfo.swift in Sources */,
 				1A3EDD142A96CA2D0064D280 /* Solana.xcdatamodeld in Sources */,
 				1A53424E2A9AAF6C00E45B66 /* WallView.swift in Sources */,
 				190EC1552A9AFC74000305B7 /* TypesArrayStruct.swift in Sources */,
@@ -381,7 +394,10 @@
 				1A3EDD082A96CA2B0064D280 /* SolanaApp.swift in Sources */,
 				1A24AAD22A9AECAD00DE6427 /* Post.swift in Sources */,
 				1A53424C2A9AAF5C00E45B66 /* CopingView.swift in Sources */,
+				1AED48702A9C1934009D13AF /* NewPostView.swift in Sources */,
+				1AED48762A9C1EF0009D13AF /* CancerType.swift in Sources */,
 				1A53424A2A9AAF4500E45B66 /* CancerView.swift in Sources */,
+				1AED48722A9C1C9C009D13AF /* CancerDefinitionView.swift in Sources */,
 				1A24AAD62A9B03FD00DE6427 /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

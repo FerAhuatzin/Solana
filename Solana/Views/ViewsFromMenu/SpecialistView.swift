@@ -48,7 +48,7 @@ struct SpecialistView: View {
                     Image (systemName: "chevron.down")
                     Spacer()
                     VStack {
-                        Text("Especialistas:")
+                        Text("Especialista en:")
                             .font(.custom("Roboto",size: 30))
                             .foregroundColor(.black)
                             

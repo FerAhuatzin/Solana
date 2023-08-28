@@ -23,7 +23,7 @@ struct MenuView: View {
                     
                     Spacer()
                 }
-                .padding(.leading,20)
+                .padding()
                 
                 HStack {
                     Text("Hola" )

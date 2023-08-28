@@ -16,7 +16,7 @@ struct WallView: View {
                         .font(.custom("Roboto",size: 35))
                         .foregroundColor(Color(red: 0.338, green: 0.44, blue: 0.962))
                     Spacer()
-                    NavigationLink (destination: SpecialistView()) {
+                    NavigationLink (destination: NewPostView()) {
                         Image(systemName: "plus")
                         Text("Nueva publicación")
                     }

@@ -20,7 +20,7 @@ struct InitialView: View {
                     
 
                     Text("SOLANA")
-                        .padding(.top, 50.0)
+                        .padding()
                         .padding(.bottom, 120.0)
                         .fontWeight(.bold)
                         .font(.custom("RobotoBold", size: 70))
