@@ -44,6 +44,11 @@ struct ProfileView: View {
                         }
                     })
                     
+                }.task(id: item){
+                    
+                    if let data = try! await item?.loadTransferable(type: Data.self){
+                        self.avatar = data
+                    }
                 }
                 
                 
@@ -113,3 +118,6 @@ struct profileView_Previews: PreviewProvider {
         ProfileView(username: "fernando", email: "fernando@gmail.com", city: "Puebla")
     }
 }
+
+
+
