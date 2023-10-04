@@ -12,6 +12,8 @@ struct Post: View {
     var username: String
     var post: Image
     var caption: String
+    @State var numberLikes: Int //esto despues lo va a recibir de la basde de datos
+    @State var like: Image = Image(systemName: "heart")
     var body: some View {
         VStack {
             HStack {
@@ -24,14 +26,37 @@ struct Post: View {
                 .resizable()
                 .frame(width: UIScreen.screenWidth, height: UIScreen.screenWidth/1.333)
             HStack {
-                Image(systemName: "heart")
-                Image(systemName: "message")
+                Button {
+                    likeMechanism()
+                } label: {
+                    like
+                        .foregroundColor(.black)
+                }
+                NavigationLink (destination: CommentView()) {
+                    Image(systemName: "message")
+                }
+                .foregroundColor(.black)
+                Spacer()
+            }
+            .padding(.leading,20)
+            .padding(.top,10)
+            .padding(.bottom,5)
+            HStack {
+                Text("\(numberLikes) me gustas")
+                Spacer()
+            }
+            .padding(.leading,20)
+            HStack {
+                Text(caption)
                 Spacer()
             }
             .padding(.leading,20)
             .padding(.top,10)
             HStack {
-                Text(caption)
+                NavigationLink (destination: CommentView()) {
+                    Text("comentarios...")
+                        .foregroundColor(.gray)
+                }
                 Spacer()
             }
             .padding(.leading,20)
@@ -39,6 +64,18 @@ struct Post: View {
             
         }
         .padding()
+    }
+    
+    //cuando sea mas complejo debe de haber una variable que defina si el usuario ya le dio like o no, y cuando le de like y lo quite actualizar el numero total de likes
+    func likeMechanism () {
+        if (numberLikes==1) {
+            numberLikes = 0
+            like = Image(systemName: "heart")
+        }//end if
+        else {
+            numberLikes = 1
+            like = Image(systemName: "heart.fill")
+        } //end else
     }
 }
 extension UIScreen{
@@ -49,6 +86,6 @@ extension UIScreen{
 
 struct Post_Previews: PreviewProvider {
     static var previews: some View {
-        Post(profilePicture: Image(systemName: "person.fill"), username: "Manu23", post: Image("Post1"), caption: "Trabajando en Solana")
+        Post(profilePicture: Image(systemName: "person.fill"), username: "Manu23", post: Image("Post1"), caption: "Trabajando en Solana", numberLikes: 0)
     }
 }
