@@ -25,6 +25,7 @@ struct InitialView: View {
                         .fontWeight(.bold)
                         .font(.custom("RobotoBold", size: 70))
                         .foregroundColor(Color(red: 0.338, green: 0.44, blue: 0.962))
+                        .navigationBarBackButtonHidden(true)
                     Spacer()
                     
                     NavigationLink(destination: InicioSesionView()) {
