@@ -31,6 +31,20 @@ struct CancerView: View {
                                     ]
     var cancerInfo = Cancerinfo()
     
+    
+    struct JustifiedText: View {
+        var text: String
+        var body: some View {
+            GeometryReader { geometry in
+                Text(self.text)
+                    .frame(width: geometry.size.width, alignment: .leading)
+                    .fixedSize(horizontal: false, vertical: true)
+                    .lineSpacing(5) // Ajusta el espaciado entre líneas según tu preferencia
+            }
+        }
+    }
+
+    
     var body: some View {
         NavigationStack{
             VStack{
@@ -59,6 +73,7 @@ struct CancerView: View {
                     }
                     Text("El cáncer es la segunda causa principal de muerte a nivel mundial, representa unestimado de 9,6 millones de muertes, o una de cada seis muertes, en 2018. El cáncer de pulmón, próstata, colorrectal, estómago e hígado son los tipos másfrecuentes en los hombres, mientras que el cáncer de mama, los cáncerescolorrectales, de pulmón, de cuello uterino y de tiroides son los más comunes entrelas mujeres (WHO, 2021). \n \nEn América Latina el cáncer es una de las principales causas de mortalidad. Enel año 2008, causo 1,2 millones de muertes, un 45% de las cuales ocurrieron enAmérica Latina y el Caribe. Según datos de la Organización Panamericana de Salud(OPS) se pronostica que la mortalidad por cáncer en las Américas aumente hasta2,1 millones en el 2030. (OPS, 2020)")
                         .padding(.trailing,20)
+                    
                         .padding(.leading,20)
                         .padding(.bottom)
                     HStack {

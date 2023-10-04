@@ -35,6 +35,7 @@ struct ProfileView: View {
                             .resizable()
                             .clipShape(Circle())
                             .frame(width: 80, height: 80)
+                            .aspectRatio(contentMode: .fill)
                         
                     }else{
                         Image(systemName: "person.circle.fill")
@@ -43,6 +44,11 @@ struct ProfileView: View {
                     }
                 })
                 
+            }.task(id: item){
+                
+                if let data = try! await item?.loadTransferable(type: Data.self){
+                    self.avatar = data
+                }
             }
             
             
