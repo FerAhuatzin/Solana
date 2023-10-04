@@ -72,12 +72,16 @@ struct SolanaView: View {
                     .background(.black.opacity(0.05))
                     .cornerRadius(10)
                     .onSubmit {
-                        sendMessage(message: userMessage)
+                        if !userMessage.isEmpty {
+                            sendMessage(message: userMessage)
+                        }
                     }
 
                 
                 Button{
-                    sendMessage(message: userMessage)
+                    if !userMessage.isEmpty {
+                        sendMessage(message: userMessage)
+                    }
                 } label: {
                     Image(systemName: "paperplane")
                         .foregroundColor(Color(red: 0.338, green: 0.44, blue: 0.962))
@@ -90,6 +94,7 @@ struct SolanaView: View {
     }
     
     func sendMessage (message: String) {
+        
         withAnimation {
             solana.append("[User]" + message)
             self.userMessage = ""
