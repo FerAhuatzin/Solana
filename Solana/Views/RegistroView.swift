@@ -134,17 +134,19 @@ struct RegistroView: View {
                         
 
                 }
-                 
-                NavigationLink(destination: ObjectView(username: name))
-                {
-                    Text("Continuar")
-                        .frame(width: 125.0, height: 50.0)
-                        .foregroundColor(.black)
-                        .font(.custom("Roboto", size: 20))
-                        .background(Color.black.opacity(0.05))
-                        .cornerRadius(10)
-                        .padding(.top,20)
-                        .padding()
+                
+                if accept {
+                    NavigationLink(destination: ObjectView(username: name))
+                    {
+                        Text("Continuar")
+                            .frame(width: 125.0, height: 50.0)
+                            .foregroundColor(.black)
+                            .font(.custom("Roboto", size: 20))
+                            .background(Color.black.opacity(0.05))
+                            .cornerRadius(10)
+                            .padding(.top,20)
+                            .padding()
+                    }
                 }
                 
             }
