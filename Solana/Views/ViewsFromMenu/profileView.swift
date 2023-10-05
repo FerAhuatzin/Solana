@@ -96,9 +96,9 @@ struct ProfileView: View {
                     
                     NavigationLink(destination: InitialView()){
                         VStack{
-                            Image("cerrarSesion")
+                            Image(systemName: "rectangle.portrait.and.arrow.right")
                                 .resizable()
-                                .frame(width:50, height:50)
+                                .frame(width:30, height:30)
                                 .foregroundColor(Color.blue)
                                 
                             Text("Cerrar sesión")
