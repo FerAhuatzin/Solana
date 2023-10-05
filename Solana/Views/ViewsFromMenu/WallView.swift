@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct WallView: View {
+    @State var posts: [PostData] = [PostData(profilePicture: Image(systemName: "person.fill"), username: "Manu23", post: Image("Post1"), caption: "Trabajando en Solana", numberLikes: 0), PostData(profilePicture: Image(systemName: "person.fill"), username: "Manu23", post: Image("Post2"), caption: "Trabajando en Solana X2", numberLikes: 0), PostData(profilePicture: Image(systemName: "person.fill"), username: "Fer20", post: Image("Post3"), caption: "Trabajando en Solana X3", numberLikes: 0)]
     var body: some View {
         NavigationView {
             VStack {
@@ -27,14 +28,15 @@ struct WallView: View {
                 Spacer()
                 
                 ScrollView() {
-                    Post(profilePicture: Image(systemName: "person.fill"), username: "Manu23", post: Image("Post1"), caption: "Trabajando en Solana", numberLikes: 0)
-                    Post(profilePicture: Image(systemName: "person.fill"), username: "Manu23", post: Image("Post2"), caption: "Trabajando en Solana X2", numberLikes: 0)
-                    Post(profilePicture: Image(systemName: "person.fill"), username: "Fer20", post: Image("Post3"), caption: "Trabajando en Solana X3", numberLikes: 0)
+                    ForEach(posts.reversed(), id: \.self) {post in
+                        Post(profilePicture: post.profilePicture, username: post.username, post: post.post, caption: post.caption, numberLikes: post.numberLikes)
+                    }
                 }
             }
         }
         
     }
+    
 }
 
 struct WallView_Previews: PreviewProvider {
