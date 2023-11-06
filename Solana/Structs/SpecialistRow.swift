@@ -13,7 +13,6 @@ struct SpecialistRow: View {
         HStack {
             Text(specialist.name)
                 .font(.custom("Roboto", size: 18))
-                .foregroundColor(Color(red: 0.338, green: 0.44, blue: 0.962))
             Spacer()
             VStack {
                 HStack {
