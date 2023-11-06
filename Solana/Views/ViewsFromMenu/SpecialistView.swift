@@ -30,7 +30,7 @@ struct SpecialistView: View {
             VStack {
                 
                 HStack {
-                    Menu("Tipo") {
+                    Menu() {
                         Button("Oncólogos"){
                                 specialty  = "Oncología"
                             }
@@ -44,8 +44,9 @@ struct SpecialistView: View {
                                 specialty = "Tanatología"
                             }
                     }
-                    .padding(.leading)
-                    Image (systemName: "chevron.down")
+                    label: {
+                        Label("Tipo", systemImage: "chevron.down")
+                    }
                     Spacer()
                     VStack {
                         Text("Especialista en:")
