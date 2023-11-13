@@ -30,6 +30,10 @@ struct CancerView: View {
                                     TypesArray(type: "Cáncer de tiroides", image: "LTiroides")
                                     ]
     var cancerInfo = Cancerinfo()
+    @State private var searchTerm = ""
+
+   
+    
     
     var body: some View {
         NavigationStack{
@@ -74,6 +78,20 @@ struct CancerView: View {
                         .padding(.bottom)
              
                 }
+                
+                
+                TextField("Buscar", text: $searchTerm)
+                    .textFieldStyle(RoundedBorderTextFieldStyle())
+                    .padding()
+                
+                List {
+                    ForEach(typesArray.filter {
+                        searchTerm.isEmpty || $0.type.localizedCaseInsensitiveContains(searchTerm)
+                    }, id: \.self) { typeArray in
+                        TypesStruct(type: typeArray.type, image: typeArray.image, cancer: cancerInfo.mamaCancer)
+                    }
+                }
+
                 
                 Text("Tipos")
                     .font(.custom("Roboto",size: 40))
