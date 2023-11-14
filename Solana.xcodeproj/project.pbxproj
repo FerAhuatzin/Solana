@@ -45,6 +45,7 @@
 		1AED48722A9C1C9C009D13AF /* CancerDefinitionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AED48712A9C1C9C009D13AF /* CancerDefinitionView.swift */; };
 		1AED48742A9C1EC4009D13AF /* CancerInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AED48732A9C1EC4009D13AF /* CancerInfo.swift */; };
 		1AED48762A9C1EF0009D13AF /* CancerType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AED48752A9C1EF0009D13AF /* CancerType.swift */; };
+		1AF52BAB2B02F6260000DECE /* CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AF52BAA2B02F6260000DECE /* CalendarView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -106,6 +107,7 @@
 		1AED48712A9C1C9C009D13AF /* CancerDefinitionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CancerDefinitionView.swift; sourceTree = "<group>"; };
 		1AED48732A9C1EC4009D13AF /* CancerInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CancerInfo.swift; sourceTree = "<group>"; };
 		1AED48752A9C1EF0009D13AF /* CancerType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CancerType.swift; sourceTree = "<group>"; };
+		1AF52BAA2B02F6260000DECE /* CalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -248,6 +250,7 @@
 				1AED486F2A9C1934009D13AF /* NewPostView.swift */,
 				1AED48712A9C1C9C009D13AF /* CancerDefinitionView.swift */,
 				1A8233172ACCF08600D2D61D /* CommentView.swift */,
+				1AF52BAA2B02F6260000DECE /* CalendarView.swift */,
 			);
 			path = ViewsFromMenu;
 			sourceTree = "<group>";
@@ -402,6 +405,7 @@
 				190EC1552A9AFC74000305B7 /* TypesArrayStruct.swift in Sources */,
 				1AED486E2A9C0C55009D13AF /* SpecialistRow.swift in Sources */,
 				1A3EDD412A96E8BE0064D280 /* RegistroView.swift in Sources */,
+				1AF52BAB2B02F6260000DECE /* CalendarView.swift in Sources */,
 				1A24AAD42A9AFA2600DE6427 /* profileView.swift in Sources */,
 				1A24AAD02A9AE56300DE6427 /* CopingDefinitions.swift in Sources */,
 				1A5342502A9AAF7D00E45B66 /* SpecialistView.swift in Sources */,
