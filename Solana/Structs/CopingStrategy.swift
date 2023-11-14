@@ -20,6 +20,7 @@ struct CopingStrategy: View {
                 Spacer()
                 Text(copingName)
                     .font(.custom("Roboto", size: 20))
+                    .foregroundColor(.black)
             }
         }
     }
