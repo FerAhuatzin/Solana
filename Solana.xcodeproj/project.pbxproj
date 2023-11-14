@@ -11,6 +11,7 @@
 		190EC1552A9AFC74000305B7 /* TypesArrayStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 190EC1542A9AFC73000305B7 /* TypesArrayStruct.swift */; };
 		1988ACCE2A97CCE10052567A /* ObjectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1988ACCD2A97CCE10052567A /* ObjectView.swift */; };
 		19C717662ACE19E600CFDFAC /* ProfileStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19C717652ACE19E600CFDFAC /* ProfileStruct.swift */; };
+		1A0B223E2B03D3B000FAE54A /* DocumentScannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0B223D2B03D3B000FAE54A /* DocumentScannerView.swift */; };
 		1A24AAC92A9ACBE000DE6427 /* solanaManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A24AAC82A9ACBE000DE6427 /* solanaManager.swift */; };
 		1A24AACC2A9ADA4700DE6427 /* CopingStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A24AACB2A9ADA4700DE6427 /* CopingStrategy.swift */; };
 		1A24AACE2A9ADB1300DE6427 /* CopingDefinitionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A24AACD2A9ADB1300DE6427 /* CopingDefinitionView.swift */; };
@@ -70,6 +71,7 @@
 		190EC1542A9AFC73000305B7 /* TypesArrayStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypesArrayStruct.swift; sourceTree = "<group>"; };
 		1988ACCD2A97CCE10052567A /* ObjectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectView.swift; sourceTree = "<group>"; };
 		19C717652ACE19E600CFDFAC /* ProfileStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileStruct.swift; sourceTree = "<group>"; };
+		1A0B223D2B03D3B000FAE54A /* DocumentScannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentScannerView.swift; sourceTree = "<group>"; };
 		1A24AAC82A9ACBE000DE6427 /* solanaManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = solanaManager.swift; sourceTree = "<group>"; };
 		1A24AACB2A9ADA4700DE6427 /* CopingStrategy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CopingStrategy.swift; sourceTree = "<group>"; };
 		1A24AACD2A9ADB1300DE6427 /* CopingDefinitionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CopingDefinitionView.swift; sourceTree = "<group>"; };
@@ -251,6 +253,7 @@
 				1AED48712A9C1C9C009D13AF /* CancerDefinitionView.swift */,
 				1A8233172ACCF08600D2D61D /* CommentView.swift */,
 				1AF52BAA2B02F6260000DECE /* CalendarView.swift */,
+				1A0B223D2B03D3B000FAE54A /* DocumentScannerView.swift */,
 			);
 			path = ViewsFromMenu;
 			sourceTree = "<group>";
@@ -413,6 +416,7 @@
 				1A3EDD082A96CA2B0064D280 /* SolanaApp.swift in Sources */,
 				1A24AAD22A9AECAD00DE6427 /* Post.swift in Sources */,
 				1A53424C2A9AAF5C00E45B66 /* CopingView.swift in Sources */,
+				1A0B223E2B03D3B000FAE54A /* DocumentScannerView.swift in Sources */,
 				1AED48702A9C1934009D13AF /* NewPostView.swift in Sources */,
 				1AED48762A9C1EF0009D13AF /* CancerType.swift in Sources */,
 				1A53424A2A9AAF4500E45B66 /* CancerView.swift in Sources */,
