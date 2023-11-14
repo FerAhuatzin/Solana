@@ -38,7 +38,7 @@ struct MenuView: View {
                 
                 .navigationBarBackButtonHidden(true)
 
-                Text("¿Qué necesitas hoy?")
+                Text("¿Cómo te puedo ayudar?")
 
                     .font(.custom("Roboto",size: 30))
                 
@@ -77,7 +77,7 @@ struct MenuView: View {
                             .resizable()
                             .frame(width:42, height:50)
                             .foregroundColor(Color(red: 0.338, green: 0.44, blue: 0.962))
-                        Text("Ver muro")
+                        Text("Ver red social")
                             .padding(.leading,10)
                         NavigationLink (destination: WallView()) {
                             
