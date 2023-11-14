@@ -9,6 +9,10 @@ import SwiftUI
 
 struct MenuView: View {
     @State var username : String
+    @State private var showMessage = false
+    @State private var selectedMessage: String?
+    let messages = ["Hello!", "How are you?","It's a great day!"]
+    let displayDuration = 3.0
     var body: some View {
         NavigationStack {
             VStack {
@@ -38,7 +42,7 @@ struct MenuView: View {
                 
                 .navigationBarBackButtonHidden(true)
 
-                Text("¿Cómo te puedo ayudar?")
+                Text("¿Qué necesitas hoy?")
 
                     .font(.custom("Roboto",size: 30))
                 
@@ -77,7 +81,7 @@ struct MenuView: View {
                             .resizable()
                             .frame(width:42, height:50)
                             .foregroundColor(Color(red: 0.338, green: 0.44, blue: 0.962))
-                        Text("Ver red social")
+                        Text("Ver muro")
                             .padding(.leading,10)
                         NavigationLink (destination: WallView()) {
                             
@@ -94,13 +98,40 @@ struct MenuView: View {
                             
                         }
                     }
+  
+                    
+                    HStack {
+                        Image(systemName: "list.bullet.clipboard")
+                            .resizable()
+                            .frame(width:42, height:50)
+                            .foregroundColor(Color(red: 0.338, green: 0.44, blue: 0.962))
+                        Text("Subir documento")
+                            .padding(.leading,10)
+                        NavigationLink (destination: DocumentScannerView()) {
+                            
+                        }
+                    }
                 } //end list
                 
                 
                 Spacer()
                 Image("Solana")
                     .resizable()
-                    .frame(width:200, height:200)
+                    .frame(width:200, height:220)
+                    .onTapGesture {
+                        selectedMessage = messages.randomElement()
+                        showMessage.toggle()
+                        DispatchQueue.main.asyncAfter(deadline: .now() + displayDuration){
+                            showMessage = false
+                        }
+                    }
+                if let message = selectedMessage, showMessage{
+                    Text("\(message)")
+                        .font(.custom("Roboto",size: 15))
+                        .foregroundColor(Color(red: 0.338, green: 0.44, blue: 0.962))
+                        .transition(.opacity)
+                        .animation(.easeInOut, value:showMessage)
+                }
                 
                 
             } //end VStack
@@ -114,3 +145,7 @@ struct MenuView_Previews: PreviewProvider {
         MenuView(username: "Fernando")
     }
 }
+
+
+
+
