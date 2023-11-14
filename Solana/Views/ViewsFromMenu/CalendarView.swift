@@ -9,10 +9,10 @@ import SwiftUI
 
 struct CalendarView: View {
     @State var selected: [Bool] = [false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false]
-    @State var notes: [[String]] = [["Hola"],[],[],[],[],[], [],[],[],[],[],[], [],[],[],[],[],[], [],[],[],[],[],[], [],[],[],[],[],[], []]
+    @State var notes: [[String]] = [[],[],[],[],[],[], [],[],[],[],[],[], [],[],[],[],[],[], [],[],[],[],[],[], [],[],[],[],[],[], []]
     @State private var addNote =  false
     @State private var addingNote =  false
-    @State private var daySelected = 0
+    @State private var daySelected = 1
     @State private var note = ""
     @State private var toNote = "Síntoma"
     var body: some View {
@@ -30,7 +30,7 @@ struct CalendarView: View {
                             
                             selected = Array(repeating: false, count: 31)
                             selected[day] = true
-                            daySelected = day
+                            daySelected = day-1
                             
                         }) {
                             if selected[day] == true {
@@ -63,7 +63,15 @@ struct CalendarView: View {
                 
                 ScrollView {
                     ForEach(notes[daySelected], id: \.self) {note in
-                       Text(note)
+                        HStack {
+                            Image(systemName: "circle.fill")
+                                .resizable()
+                                .frame(width:10, height:10)
+                            Text(note)
+                                .frame(width: .infinity)
+                            Spacer()
+                        }
+                        .padding()
                     }
                 }
                 
@@ -73,6 +81,7 @@ struct CalendarView: View {
                         Button(action: {
                             addNote = !addNote
                             addingNote = false
+                            note = ""
                         }, label: {
                             Image(systemName: "plus.circle.fill")
                                 .resizable()
@@ -86,6 +95,8 @@ struct CalendarView: View {
                                 Button(action: {
                                     toNote = "Síntoma"
                                     addingNote = true
+                                    note = ""
+
                                 }, label: {
                                     Image(systemName: "circle.fill")
                                         .resizable()
@@ -99,6 +110,8 @@ struct CalendarView: View {
                                 Button(action: {
                                     toNote = "Cita"
                                     addingNote = true
+                                    note = ""
+
                                 }, label: {
                                     Image(systemName: "circle.fill")
                                         .resizable()
@@ -112,6 +125,8 @@ struct CalendarView: View {
                                 Button(action: {
                                     toNote = "Medicamento"
                                     addingNote = true
+                                    note = ""
+                                   
                                 }, label: {
                                     Image(systemName: "circle.fill")
                                         .resizable()
@@ -149,6 +164,7 @@ struct CalendarView: View {
                         Button(action: {
                             addingNote = false
                             addNote = false
+                            uploadNote(note: note, day: daySelected, type: toNote)
                         }, label: {
                             Image(systemName: "checkmark.circle.fill")
                                 .resizable()
@@ -169,6 +185,13 @@ struct CalendarView: View {
         } //end navigationStack
         
         
+        
+    }
+    
+    func uploadNote (note: String, day: Int, type: String) {
+        
+        notes[day].append(type + ": " + note)
+        self.note = ""
         
     }
 }

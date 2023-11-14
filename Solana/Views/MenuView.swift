@@ -111,6 +111,18 @@ struct MenuView: View {
                             
                         }
                     }
+                    
+                    HStack {
+                        Image(systemName: "calendar")
+                            .resizable()
+                            .frame(width:42, height:50)
+                            .foregroundColor(Color(red: 0.338, green: 0.44, blue: 0.962))
+                        Text("Calendario")
+                            .padding(.leading,10)
+                        NavigationLink (destination: CalendarView()) {
+                            
+                        }
+                    }
                 } //end list
                 
                 
