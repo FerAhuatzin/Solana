@@ -32,6 +32,7 @@ struct CopingView: View {
                     .font(.custom("Roboto",size: 35))
                     .foregroundColor(Color(red: 0.338, green: 0.44, blue: 0.962))
                     .multilineTextAlignment(.center)
+                
                 List() {
                     CopingStrategy(imageName: "figure.run", copingName: "Actividad física", definition: definitions.physicalActiviy)
                     CopingStrategy(imageName: "person.2.fill", copingName: "Acompañamiento social y familiar", definition: definitions.socialAccompaniment)
