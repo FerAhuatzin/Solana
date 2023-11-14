@@ -15,6 +15,7 @@ struct CancerView: View
     @State private var isExpandedInfo1 = false
     @State private var isExpandedInfo2 = false
     @State private var isExpandedInfo3 = false
+    @State private var isExpandedInfo4  = true
     
     var typesArray: [TypesArray] = [TypesArray(type:"Cáncer de mama", image: "LMama"),
                                     TypesArray(type: "Cáncer de ovario",image: "LOvario"),
@@ -61,7 +62,7 @@ struct CancerView: View
                 ScrollView{
                     
                     
-                    VStack(spacing:80){
+                    VStack(spacing:40){
                         
                         
                         
@@ -75,8 +76,11 @@ struct CancerView: View
                                     .padding(.leading, 20)
                                     .padding(.bottom)
                                     .font(.custom("Roboto", size: 20)) // Tamaño personalizado
+                                    .foregroundColor(.black)
+
                             }//End DisclosureGroup
                             .font(.custom("Roboto", size: 25)) // Tamaño personalizado
+                            .foregroundColor(Color(red: 0.338, green: 0.44, blue: 0.962))
                             Spacer()
 
                         }//End HStack
@@ -93,9 +97,11 @@ struct CancerView: View
                                     .padding(.leading, 20)
                                     .padding(.bottom)
                                     .font(.custom("Roboto", size: 20)) // Tamaño personalizado
+                                    .foregroundColor(.black)
+
                             }//EndDisclosureGroup
-                            
                             .font(.custom("Roboto", size: 25)) // Tamaño personalizado
+                            .foregroundColor(Color(red: 0.338, green: 0.44, blue: 0.962))
                             Spacer()
                             
                         }//EndHStack
@@ -112,31 +118,45 @@ struct CancerView: View
                                     .padding(.leading, 20)
                                     .padding(.bottom)
                                     .font(.custom("Roboto", size: 20)) // Tamaño personalizado
+                                    .foregroundColor(.black)
                             }//EndDisclosureGroup
                             .font(.custom("Roboto", size: 25)) // Tamaño personalizado
-                            
+                            .foregroundColor(Color(red: 0.338, green: 0.44, blue: 0.962))
                             Spacer()
                             
                         }//EndHStack
+                        
+                        HStack {
+                            Spacer()
+                            DisclosureGroup("Tipos de cáncer", isExpanded: $isExpandedInfo4) {
+                                // Contenido del DisclosureGroup
+                                TextField("Busque por tipo de cáncer", text: $searchTerm)
+                                    .textFieldStyle(RoundedBorderTextFieldStyle())
+                                    .padding()
+                                    .foregroundColor(.black)
+                                    .font(.custom("Roboto", size: 20))
+                                List {
+                                    ForEach(typesArray.filter { searchTerm.isEmpty || $0.type.localizedCaseInsensitiveContains(searchTerm) }, id: \.self) { typeArray in
+                                        TypesStruct(type: typeArray.type, image: typeArray.image, cancer: cancerInfo.mamaCancer)
+                                    }
+                                }
+                                .frame(height: 600)
+                                .foregroundColor(.black)
+                                .font(.custom("Roboto", size: 20))
+                            }
+                            .font(.custom("Roboto", size: 25))
+                            .foregroundColor(Color(red: 0.338, green: 0.44, blue: 0.962))
+                            
+                            Spacer()
+                        }
+                      
                       
                         
                     }//EndVStack
       
                 }//EndScrollView
                 
-                TextField("Busque por tipo de cáncer", text: $searchTerm)
-                    .textFieldStyle(RoundedBorderTextFieldStyle())
-                    .padding()
-                List {
-                    ForEach(typesArray.filter
-                            {
-                            searchTerm.isEmpty || $0.type.localizedCaseInsensitiveContains(searchTerm)
-                            }//EndForEach
-                            , id: \.self) { typeArray in
-                        TypesStruct(type: typeArray.type, image: typeArray.image, cancer: cancerInfo.mamaCancer)
-                        }//typeArray
-                
-                }//EndList
+               
                     
             }//EndVStack
             
